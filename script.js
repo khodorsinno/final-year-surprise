@@ -75,7 +75,22 @@ function createFloatingItem() {
     }, 12000);
 
 }
+/* =========================================
+   FINAL BOSS BUTTON
+========================================= */
 
+function acceptBossBattle() {
+
+    const message =
+        document.getElementById("battleMessage");
+
+    if (message) {
+
+        message.style.display = "block";
+
+    }
+
+}
 
 setInterval(
     createFloatingItem,
