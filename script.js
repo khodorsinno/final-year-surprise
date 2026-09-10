@@ -159,3 +159,41 @@ function openLetter() {
     }
 
 }
+/* =========================================
+   PAGE 8 — MEMORY GALLERY
+========================================= */
+
+function openMemory(photo) {
+
+    const lightbox =
+        document.getElementById("memoryLightbox");
+
+    const lightboxImage =
+        document.getElementById("lightboxImage");
+
+    const image =
+        photo.querySelector("img");
+
+    if (lightbox && lightboxImage && image) {
+
+        lightboxImage.src = image.src;
+
+        lightbox.style.display = "flex";
+
+    }
+
+}
+
+
+function closeMemory() {
+
+    const lightbox =
+        document.getElementById("memoryLightbox");
+
+    if (lightbox) {
+
+        lightbox.style.display = "none";
+
+    }
+
+}
