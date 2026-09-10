@@ -96,3 +96,24 @@ setInterval(
     createFloatingItem,
     600
 );
+/* =========================================
+   PAGE 4 — REVEAL FUTURE
+========================================= */
+
+function revealPredictions() {
+
+    const prediction =
+        document.getElementById("finalPrediction");
+
+    if (prediction) {
+
+        prediction.style.display = "block";
+
+        prediction.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+}
