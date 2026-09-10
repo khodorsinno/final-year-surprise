@@ -8,30 +8,27 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
 
     font-family: 'Poppins', sans-serif;
 
     background:
-        radial-gradient(
-            circle at top,
-            #38204f 0%,
-            #171329 45%,
-            #090817 100%
+        linear-gradient(
+            135deg,
+            #fff5fa,
+            #ffddec,
+            #fff
         );
 
-    color: white;
+    color: #5a3a4a;
 
     min-height: 100vh;
 
     overflow-x: hidden;
-
 }
 
 
@@ -59,12 +56,16 @@ body {
 
     padding: 0 6%;
 
-    background: rgba(10, 8, 25, 0.75);
+    background: rgba(255,255,255,0.88);
 
     backdrop-filter: blur(12px);
 
     border-bottom:
-        1px solid rgba(255,255,255,0.1);
+        1px solid #f7c6db;
+
+    box-shadow:
+        0 5px 20px
+        rgba(230,120,160,0.12);
 
     z-index: 100;
 
@@ -73,11 +74,11 @@ body {
 
 .logo {
 
-    font-weight: 600;
+    font-weight: 700;
 
     font-size: 18px;
 
-    color: #ffb4d9;
+    color: #e85d91;
 
 }
 
@@ -93,11 +94,13 @@ body {
 
 .nav-links a {
 
-    color: white;
+    color: #8c526b;
 
     text-decoration: none;
 
     font-size: 14px;
+
+    font-weight: 500;
 
     transition: 0.3s;
 
@@ -106,7 +109,7 @@ body {
 
 .nav-links a:hover {
 
-    color: #ff8fc8;
+    color: #e85d91;
 
 }
 
@@ -152,9 +155,9 @@ body {
 
     display: inline-block;
 
-    background: #ff9dcc;
+    background: #ffb6d2;
 
-    color: #26152e;
+    color: #8c3f5d;
 
     padding: 10px 25px;
 
@@ -167,6 +170,10 @@ body {
     margin-bottom: 25px;
 
     transform: rotate(-2deg);
+
+    box-shadow:
+        0 8px 20px
+        rgba(232,93,145,0.15);
 
 }
 
@@ -181,6 +188,8 @@ body {
 
     margin-bottom: 30px;
 
+    color: #633e50;
+
 }
 
 
@@ -188,7 +197,7 @@ body {
 
     display: block;
 
-    color: #ff9dcc;
+    color: #e85d91;
 
     font-family: 'Pacifico', cursive;
 
@@ -205,7 +214,7 @@ body {
 
     margin: auto;
 
-    color: #ddd5e7;
+    color: #795a68;
 
     font-size: 18px;
 
@@ -216,7 +225,7 @@ body {
 
 .hero-text strong {
 
-    color: #ffb4d9;
+    color: #e85d91;
 
 }
 
@@ -232,7 +241,7 @@ body {
 
     font-family: 'Pacifico', cursive;
 
-    color: #ffb4d9;
+    color: #e85d91;
 
     font-size: 34px;
 
@@ -241,7 +250,7 @@ body {
 
 .announcement p {
 
-    color: #d9c9e5;
+    color: #795a68;
 
 }
 
@@ -259,57 +268,35 @@ body {
 
     padding: 12px;
 
-    background: #fff;
+    background: white;
 
     transform: rotate(-4deg);
 
     box-shadow:
-        0 15px 40px
-        rgba(0,0,0,0.4);
+        0 15px 35px
+        rgba(180,80,120,0.20);
+
+    border-radius: 3px;
 
 }
 
 
-.photo-placeholder {
+.photo-frame img {
+
+    width: 100%;
 
     height: 260px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #ffc6df,
-            #e7c7ff
-        );
+    object-fit: cover;
 
-    color: #5c315c;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    font-size: 50px;
-
-}
-
-
-.photo-placeholder span {
-
-    font-size: 14px;
-
-    margin-top: 10px;
-
-    font-weight: 600;
+    display: block;
 
 }
 
 
 .photo-note {
 
-    color: #333;
+    color: #633e50;
 
     font-family: 'Pacifico', cursive;
 
@@ -338,8 +325,8 @@ body {
     background:
         linear-gradient(
             135deg,
-            #ff8fc8,
-            #c98cff
+            #f783b1,
+            #e85d91
         );
 
     color: white;
@@ -349,8 +336,8 @@ body {
     font-weight: 700;
 
     box-shadow:
-        0 10px 30px
-        rgba(255,130,200,0.3);
+        0 10px 25px
+        rgba(232,93,145,0.25);
 
     transition: 0.3s;
 
@@ -364,8 +351,8 @@ body {
         scale(1.03);
 
     box-shadow:
-        0 15px 40px
-        rgba(255,130,200,0.5);
+        0 15px 35px
+        rgba(232,93,145,0.35);
 
 }
 
@@ -392,22 +379,18 @@ body {
 
     max-width: 95%;
 
-    background:
-        rgba(255,255,255,0.07);
+    background: white;
 
     border:
-        1px solid
-        rgba(255,255,255,0.12);
+        2px solid #ffd1e2;
 
     border-radius: 30px;
 
     padding: 50px;
 
-    backdrop-filter: blur(15px);
-
     box-shadow:
-        0 20px 60px
-        rgba(0,0,0,0.3);
+        0 20px 50px
+        rgba(220,100,145,0.12);
 
     text-align: center;
 
@@ -427,14 +410,14 @@ body {
 
     font-size: 38px;
 
-    color: #ffb4d9;
+    color: #e85d91;
 
 }
 
 
 .mission-card > p {
 
-    color: #cfc4dc;
+    color: #8b6877;
 
     margin-top: 10px;
 
@@ -456,7 +439,7 @@ body {
 
     margin-bottom: 10px;
 
-    color: #ddd;
+    color: #795a68;
 
 }
 
@@ -465,7 +448,7 @@ body {
 
     height: 18px;
 
-    background: #251b36;
+    background: #ffe5ef;
 
     border-radius: 20px;
 
@@ -483,8 +466,8 @@ body {
     background:
         linear-gradient(
             90deg,
-            #ff8fc8,
-            #c98cff
+            #ffb6d2,
+            #e85d91
         );
 
     border-radius: 20px;
@@ -506,14 +489,16 @@ body {
 
 .stats div {
 
-    background:
-        rgba(255,255,255,0.06);
+    background: #fff5f9;
+
+    border:
+        1px solid #ffd5e5;
 
     padding: 20px 10px;
 
     border-radius: 18px;
 
-    color: #d8ccdf;
+    color: #795a68;
 
 }
 
@@ -533,7 +518,7 @@ body {
 
     display: block;
 
-    color: #ff9dcc;
+    color: #e85d91;
 
     margin-top: 5px;
 
@@ -548,7 +533,7 @@ body {
 
     line-height: 1.8;
 
-    color: #e6dbea;
+    color: #795a68;
 
 }
 
@@ -579,12 +564,25 @@ body {
 
     text-align: center;
 
+    background: white;
+
+    padding: 55px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(220,100,145,0.12);
+
+    border:
+        2px solid #ffd5e5;
+
 }
 
 
 .small-title {
 
-    color: #ff9dcc;
+    color: #e85d91;
 
     letter-spacing: 3px;
 
@@ -601,7 +599,7 @@ body {
 
     font-size: 48px;
 
-    color: #ffb4d9;
+    color: #e85d91;
 
     margin-bottom: 30px;
 
@@ -614,14 +612,14 @@ body {
 
     line-height: 2;
 
-    color: #ded5e5;
+    color: #795a68;
 
 }
 
 
 .message-card strong {
 
-    color: #ff9dcc;
+    color: #e85d91;
 
 }
 
@@ -637,14 +635,16 @@ footer {
 
     padding: 50px 20px;
 
-    color: #aaa0b4;
+    color: #9b7887;
+
+    background: white;
 
 }
 
 
 footer strong {
 
-    color: #ff9dcc;
+    color: #e85d91;
 
 }
 
@@ -770,6 +770,13 @@ footer strong {
 
         grid-template-columns:
             repeat(2, 1fr);
+
+    }
+
+
+    .message-card {
+
+        padding: 35px 20px;
 
     }
 
