@@ -1344,3 +1344,546 @@ footer strong {
     }
 
 }
+/* =========================================
+   PAGE 3 — JOURNEY
+========================================= */
+
+.journey-section {
+
+    padding: 120px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.journey-container {
+
+    width: 1000px;
+
+    max-width: 95%;
+
+}
+
+
+/* =========================================
+   JOURNEY HEADER
+========================================= */
+
+.journey-header {
+
+    text-align: center;
+
+    margin-bottom: 80px;
+
+}
+
+
+.journey-label {
+
+    display: inline-block;
+
+    background: #ffb6d2;
+
+    color: #8c3f5d;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.journey-header h2 {
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    color: #633e50;
+
+    margin-bottom: 20px;
+
+}
+
+
+.journey-header h2 span {
+
+    display: block;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-weight: 400;
+
+    margin-top: 8px;
+
+}
+
+
+.journey-header p {
+
+    max-width: 650px;
+
+    margin: 10px auto;
+
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.journey-timeline {
+
+    position: relative;
+
+    padding: 20px 0;
+
+}
+
+
+/* Vertical line */
+
+.journey-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: 50%;
+
+    width: 3px;
+
+    background: #ffd1e2;
+
+    transform: translateX(-50%);
+
+}
+
+
+/* =========================================
+   TIMELINE ITEM
+========================================= */
+
+.journey-item {
+
+    position: relative;
+
+    width: 50%;
+
+    padding: 20px 45px 50px 0;
+
+}
+
+
+.journey-item.journey-right {
+
+    margin-left: 50%;
+
+    padding:
+        20px 0 50px 45px;
+
+}
+
+
+/* =========================================
+   TIMELINE DOT
+========================================= */
+
+.journey-dot {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: -20px;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: white;
+
+    border: 3px solid #ffb6d2;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    z-index: 2;
+
+    box-shadow:
+        0 5px 15px
+        rgba(232,93,145,0.15);
+
+}
+
+
+.journey-right .journey-dot {
+
+    left: -20px;
+
+    right: auto;
+
+}
+
+
+.final-dot {
+
+    border-color: #e85d91;
+
+    background: #fff0f6;
+
+}
+
+
+/* =========================================
+   JOURNEY CARD
+========================================= */
+
+.journey-card {
+
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(220,100,145,0.10);
+
+    transition: 0.3s;
+
+}
+
+
+.journey-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(220,100,145,0.16);
+
+}
+
+
+.journey-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.journey-card h3 {
+
+    color: #e85d91;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.journey-card p {
+
+    color: #795a68;
+
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================================
+   MEMORY PLACEHOLDER
+========================================= */
+
+.memory-placeholder {
+
+    min-height: 130px;
+
+    margin-top: 20px;
+
+    border: 2px dashed #f5bfd4;
+
+    border-radius: 18px;
+
+    background: #fff8fb;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #e85d91;
+
+    font-size: 30px;
+
+}
+
+
+.memory-placeholder span {
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 15px;
+
+    color: #9b7887;
+
+}
+
+
+/* =========================================
+   FINAL YEAR CARD
+========================================= */
+
+.final-journey-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #ffe0ec
+        );
+
+    border-color: #f7bfd5;
+
+}
+
+
+.final-year-text {
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 38px;
+
+    color: #e85d91;
+
+    margin: 10px 0 15px;
+
+}
+
+
+/* =========================================
+   ENDING MESSAGE
+========================================= */
+
+.journey-ending {
+
+    margin-top: 80px;
+
+    padding: 55px 30px;
+
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px
+        rgba(220,100,145,0.12);
+
+}
+
+
+.ending-heart {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.journey-ending h3 {
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 42px;
+
+    color: #e85d91;
+
+    margin-bottom: 20px;
+
+}
+
+
+.journey-ending p {
+
+    max-width: 650px;
+
+    margin: 8px auto;
+
+    color: #795a68;
+
+    line-height: 1.8;
+
+}
+
+
+.journey-ending strong {
+
+    display: block;
+
+    margin-top: 25px;
+
+    color: #e85d91;
+
+    font-size: 22px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.ending-line {
+
+    margin-top: 12px;
+
+    color: #633e50;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 24px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .journey-section {
+
+        padding: 90px 15px;
+
+    }
+
+
+    .journey-container {
+
+        max-width: 100%;
+
+    }
+
+
+    .journey-header h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .journey-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .journey-timeline::before {
+
+        left: 20px;
+
+    }
+
+
+    .journey-item,
+
+    .journey-item.journey-right {
+
+        width: 100%;
+
+        margin-left: 0;
+
+        padding:
+            20px 0 35px 60px;
+
+    }
+
+
+    .journey-dot,
+
+    .journey-right .journey-dot {
+
+        left: 0;
+
+        right: auto;
+
+        top: 25px;
+
+    }
+
+
+    .journey-card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .final-year-text {
+
+        font-size: 32px;
+
+    }
+
+
+    .journey-ending {
+
+        padding: 40px 20px;
+
+    }
+
+
+    .journey-ending h3 {
+
+        font-size: 34px;
+
+    }
+
+}
