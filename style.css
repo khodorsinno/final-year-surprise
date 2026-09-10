@@ -1938,3 +1938,518 @@ footer strong {
     color: #9b7887;
 
 }
+/* =========================================
+   PAGE 4 — SENIOR YEAR PREDICTIONS
+========================================= */
+
+.predictions-section {
+
+    padding: 120px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.predictions-container {
+
+    width: 1000px;
+
+    max-width: 95%;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.predictions-header {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+
+.predictions-label {
+
+    display: inline-block;
+
+    background: #ffb6d2;
+
+    color: #8c3f5d;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.predictions-header h2 {
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    color: #633e50;
+
+    margin-bottom: 20px;
+
+}
+
+
+.predictions-header h2 span {
+
+    display: block;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-weight: 400;
+
+    margin-top: 8px;
+
+}
+
+
+.predictions-header p {
+
+    max-width: 650px;
+
+    margin: 8px auto;
+
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   PREDICTION GRID
+========================================= */
+
+.prediction-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.prediction-card {
+
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 25px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px
+        rgba(220,100,145,0.10);
+
+    transition: 0.3s;
+
+}
+
+
+.prediction-card:hover {
+
+    transform:
+        translateY(-7px)
+        rotate(1deg);
+
+    box-shadow:
+        0 20px 45px
+        rgba(220,100,145,0.16);
+
+}
+
+
+.prediction-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.prediction-card h3 {
+
+    color: #633e50;
+
+    font-size: 19px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.prediction-result {
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.prediction-card p {
+
+    color: #795a68;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   GRADUATION CARD
+========================================= */
+
+.graduation-prediction {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #ffe0ec
+        );
+
+    border-color: #f7bfd5;
+
+}
+
+
+.graduation-prediction .prediction-result {
+
+    font-size: 38px;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.prediction-button-area {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+}
+
+
+.prediction-button {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 17px 32px;
+
+    border-radius: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f783b1,
+            #e85d91
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px
+        rgba(232,93,145,0.25);
+
+    transition: 0.3s;
+
+}
+
+
+.prediction-button:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 35px
+        rgba(232,93,145,0.35);
+
+}
+
+
+/* =========================================
+   FINAL PREDICTION
+========================================= */
+
+.final-prediction {
+
+    display: none;
+
+    margin-top: 45px;
+
+    padding: 50px 30px;
+
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px
+        rgba(220,100,145,0.13);
+
+    animation:
+        predictionAppear
+        0.7s ease;
+
+}
+
+
+.prediction-crystal {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.final-prediction-label {
+
+    color: #c74d7a;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.final-prediction h3 {
+
+    font-family: 'Pacifico', cursive;
+
+    color: #e85d91;
+
+    font-size: 36px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.final-prediction p {
+
+    color: #795a68;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin: 5px 0;
+
+}
+
+
+.prediction-future {
+
+    margin-top: 25px;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 30px;
+
+}
+
+
+.prediction-signature {
+
+    margin-top: 25px;
+
+    color: #9b7887;
+
+    font-size: 13px;
+
+}
+
+
+.prediction-signature strong {
+
+    color: #e85d91;
+
+}
+
+
+@keyframes predictionAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(0.97);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .predictions-section {
+
+        padding: 90px 15px;
+
+    }
+
+
+    .predictions-container {
+
+        max-width: 100%;
+
+    }
+
+
+    .predictions-header h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .predictions-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .prediction-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .prediction-card {
+
+        padding: 25px 12px;
+
+    }
+
+
+    .prediction-icon {
+
+        font-size: 36px;
+
+    }
+
+
+    .prediction-card h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .prediction-result {
+
+        font-size: 25px;
+
+    }
+
+
+    .prediction-card p {
+
+        font-size: 13px;
+
+    }
+
+
+    .final-prediction {
+
+        padding: 40px 20px;
+
+    }
+
+
+    .final-prediction h3 {
+
+        font-size: 30px;
+
+    }
+
+
+    .prediction-future {
+
+        font-size: 25px;
+
+    }
+
+}
