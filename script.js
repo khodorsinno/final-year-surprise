@@ -117,3 +117,24 @@ function revealPredictions() {
     }
 
 }
+/* =========================================
+   PAGE 5 — FINAL STATISTICS
+========================================= */
+
+function showFinalStats() {
+
+    const stats =
+        document.getElementById("finalStats");
+
+    if (stats) {
+
+        stats.style.display = "block";
+
+        stats.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+}
