@@ -3652,3 +3652,558 @@ footer strong {
     }
 
 }
+/* =========================================
+   PAGE 8 — OUR MEMORIES
+========================================= */
+
+.memories-section {
+
+    padding: 130px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.memories-container {
+
+    width: 1000px;
+
+    max-width: 95%;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.memories-header {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+
+.memories-label {
+
+    display: inline-block;
+
+    background: #ffb6d2;
+
+    color: #8c3f5d;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.memories-header h2 {
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    color: #633e50;
+
+    margin-bottom: 20px;
+
+}
+
+
+.memories-header h2 span {
+
+    display: block;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-weight: 400;
+
+    font-size: 30px;
+
+    margin-top: 10px;
+
+}
+
+
+.memories-header p {
+
+    max-width: 650px;
+
+    margin: 8px auto;
+
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   PHOTO GALLERY
+========================================= */
+
+.memory-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 35px;
+
+    align-items: start;
+
+}
+
+
+.memory-photo {
+
+    background: white;
+
+    padding: 12px 12px 18px;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(180,80,120,0.18);
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    position: relative;
+
+}
+
+
+.memory-photo img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.memory-caption {
+
+    padding: 14px 5px 2px;
+
+    text-align: center;
+
+    color: #633e50;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   POLAROID ROTATIONS
+========================================= */
+
+.memory-photo-1 {
+
+    transform: rotate(-3deg);
+
+}
+
+
+.memory-photo-2 {
+
+    transform: rotate(2deg);
+
+    margin-top: 20px;
+
+}
+
+
+.memory-photo-3 {
+
+    transform: rotate(-2deg);
+
+}
+
+
+.memory-photo-4 {
+
+    transform: rotate(2deg);
+
+    margin-top: 20px;
+
+}
+
+
+.memory-photo-5 {
+
+    transform: rotate(-3deg);
+
+}
+
+
+.memory-photo-6 {
+
+    transform: rotate(2deg);
+
+    margin-top: 20px;
+
+}
+
+
+/* =========================================
+   PHOTO HOVER
+========================================= */
+
+.memory-photo:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-10px)
+        scale(1.03);
+
+    box-shadow:
+        0 25px 50px
+        rgba(180,80,120,0.24);
+
+    z-index: 5;
+
+}
+
+
+/* =========================================
+   MEMORY MESSAGE
+========================================= */
+
+.memories-message {
+
+    margin-top: 90px;
+
+    padding: 55px 30px;
+
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px
+        rgba(220,100,145,0.12);
+
+}
+
+
+.memories-heart {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.memories-message h3 {
+
+    font-family: 'Pacifico', cursive;
+
+    color: #e85d91;
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.memories-message p {
+
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin: 7px auto;
+
+}
+
+
+.memories-message strong {
+
+    display: block;
+
+    margin-top: 25px;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 23px;
+
+}
+
+
+/* =========================================
+   IMAGE LIGHTBOX
+========================================= */
+
+.memory-lightbox {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(90,58,74,0.88);
+
+    z-index: 1000;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+.memory-lightbox img {
+
+    max-width: 90%;
+
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border: 10px solid white;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,0.3);
+
+    animation:
+        memoryZoom
+        0.4s ease;
+
+}
+
+
+.close-memory {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 35px;
+
+    border: none;
+
+    background: none;
+
+    color: white;
+
+    font-size: 50px;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+}
+
+
+@keyframes memoryZoom {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.85);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .memories-section {
+
+        padding: 90px 15px;
+
+    }
+
+
+    .memories-container {
+
+        max-width: 100%;
+
+    }
+
+
+    .memories-header h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .memories-header h2 span {
+
+        font-size: 24px;
+
+    }
+
+
+    .memories-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .memory-gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 18px;
+
+    }
+
+
+    .memory-photo {
+
+        padding: 8px 8px 12px;
+
+    }
+
+
+    .memory-photo img {
+
+        height: 210px;
+
+    }
+
+
+    .memory-caption {
+
+        font-size: 13px;
+
+    }
+
+
+    .memory-photo-2,
+
+    .memory-photo-4,
+
+    .memory-photo-6 {
+
+        margin-top: 10px;
+
+    }
+
+
+    .memories-message {
+
+        margin-top: 60px;
+
+        padding: 40px 20px;
+
+    }
+
+
+    .memories-message h3 {
+
+        font-size: 28px;
+
+    }
+
+
+    .memories-message p {
+
+        font-size: 15px;
+
+    }
+
+
+    .memories-message strong {
+
+        font-size: 20px;
+
+    }
+
+
+    .memory-lightbox {
+
+        padding: 15px;
+
+    }
+
+
+    .memory-lightbox img {
+
+        max-width: 95%;
+
+        max-height: 80vh;
+
+        border-width: 6px;
+
+    }
+
+
+    .close-memory {
+
+        top: 10px;
+
+        right: 15px;
+
+        font-size: 40px;
+
+    }
+
+}
