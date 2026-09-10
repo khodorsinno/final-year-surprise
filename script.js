@@ -138,3 +138,24 @@ function showFinalStats() {
     }
 
 }
+/* =========================================
+   PAGE 6 — OPEN LETTER
+========================================= */
+
+function openLetter() {
+
+    const letter =
+        document.getElementById("letterCard");
+
+    if (letter) {
+
+        letter.style.display = "block";
+
+        letter.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+}
