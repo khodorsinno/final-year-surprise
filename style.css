@@ -4207,3 +4207,442 @@ footer strong {
     }
 
 }
+/* =========================================
+   PAGE 10 — THE FINAL PAGE
+========================================= */
+
+.final-page {
+    min-height: 100vh;
+
+    padding: 140px 20px 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.final-container {
+    width: 900px;
+
+    max-width: 95%;
+}
+
+
+/* LABEL */
+
+.final-label {
+    display: inline-block;
+
+    background: #ffb6d2;
+
+    color: #8c3f5d;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 30px;
+}
+
+
+/* TITLE */
+
+.final-page h2 {
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    color: #633e50;
+
+    margin-bottom: 30px;
+}
+
+.final-page h2 span {
+    display: block;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    margin-top: 10px;
+}
+
+
+/* INTRO */
+
+.final-intro {
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin: 8px auto;
+
+    max-width: 650px;
+}
+
+
+/* PHOTO */
+
+.final-photo-frame {
+    position: relative;
+
+    width: 600px;
+
+    max-width: 90%;
+
+    margin: 65px auto;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 25px 60px rgba(180, 80, 120, 0.20);
+
+    transform: rotate(-2deg);
+
+    transition: 0.4s;
+}
+
+.final-photo-frame:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.final-photo-frame img {
+    width: 100%;
+
+    display: block;
+
+    max-height: 650px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+
+/* PHOTO DECORATIONS */
+
+.final-photo-decoration {
+    position: absolute;
+
+    font-size: 35px;
+
+    z-index: 2;
+}
+
+.decoration-one {
+    top: -25px;
+
+    right: -25px;
+
+    transform: rotate(15deg);
+}
+
+.decoration-two {
+    bottom: -25px;
+
+    left: -25px;
+
+    transform: rotate(-15deg);
+}
+
+.decoration-three {
+    top: 45%;
+
+    right: -35px;
+
+    font-size: 28px;
+}
+
+
+/* FINAL MESSAGE */
+
+.final-message {
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 30px;
+
+    padding: 55px 35px;
+
+    margin-top: 80px;
+
+    box-shadow:
+        0 20px 50px rgba(220, 100, 145, 0.12);
+}
+
+.final-heart {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.final-message p {
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin: 8px auto;
+
+    max-width: 650px;
+}
+
+.final-divider {
+    color: #e85d91;
+
+    margin: 30px 0;
+
+    letter-spacing: 8px;
+}
+
+.final-message h3 {
+    font-family: 'Pacifico', cursive;
+
+    color: #e85d91;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    margin: 25px 0;
+}
+
+
+/* WAITING MESSAGE */
+
+.waiting-message {
+    margin-top: 70px;
+
+    padding: 55px 30px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff,
+            #fff1f7
+        );
+
+    border: 2px solid #ffb6d2;
+
+    box-shadow:
+        0 20px 50px rgba(220, 100, 145, 0.13);
+}
+
+.waiting-message > span {
+    font-size: 50px;
+}
+
+.waiting-message h3 {
+    font-family: 'Pacifico', cursive;
+
+    color: #e85d91;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    margin: 15px 0 25px;
+}
+
+.waiting-message p {
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin: 5px;
+}
+
+.waiting-message strong {
+    display: block;
+
+    max-width: 650px;
+
+    margin: 30px auto 0;
+
+    color: #633e50;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 25px;
+
+    line-height: 1.6;
+
+    font-weight: 400;
+}
+
+
+/* SIGNATURE */
+
+.final-signature {
+    margin-top: 75px;
+
+    color: #795a68;
+}
+
+.final-signature p {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.final-signature span {
+    font-family: 'Pacifico', cursive;
+
+    color: #e85d91;
+
+    font-size: 23px;
+}
+
+
+/* WEBSITE END */
+
+.website-end {
+    margin-top: 100px;
+
+    padding-top: 45px;
+
+    border-top: 2px solid #ffd5e5;
+
+    color: #e85d91;
+
+    font-size: 45px;
+}
+
+.website-end div {
+    font-family: 'Pacifico', cursive;
+
+    font-size: 25px;
+
+    margin-top: 12px;
+}
+
+.website-end small {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #8c6273;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .final-page {
+        padding: 90px 15px 70px;
+    }
+
+    .final-container {
+        max-width: 100%;
+    }
+
+    .final-page h2 {
+        font-size: 38px;
+    }
+
+    .final-page h2 span {
+        font-size: 28px;
+    }
+
+    .final-intro {
+        font-size: 15px;
+    }
+
+    .final-photo-frame {
+        max-width: 92%;
+
+        margin: 50px auto;
+
+        padding: 10px;
+    }
+
+    .final-photo-decoration {
+        font-size: 25px;
+    }
+
+    .decoration-one {
+        right: -15px;
+    }
+
+    .decoration-two {
+        left: -15px;
+    }
+
+    .decoration-three {
+        right: -20px;
+    }
+
+    .final-message {
+        padding: 40px 20px;
+
+        margin-top: 55px;
+    }
+
+    .final-message p {
+        font-size: 15px;
+    }
+
+    .final-message h3 {
+        font-size: 30px;
+    }
+
+    .waiting-message {
+        padding: 40px 20px;
+
+        margin-top: 50px;
+    }
+
+    .waiting-message h3 {
+        font-size: 28px;
+    }
+
+    .waiting-message p {
+        font-size: 15px;
+    }
+
+    .waiting-message strong {
+        font-size: 20px;
+    }
+
+    .final-signature {
+        margin-top: 55px;
+    }
+
+    .final-signature span {
+        font-size: 19px;
+    }
+
+    .website-end {
+        margin-top: 70px;
+    }
+
+}
