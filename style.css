@@ -2453,3 +2453,644 @@ footer strong {
     }
 
 }
+/* =========================================
+   PAGE 5 — STUDENT WRAPPED
+========================================= */
+
+.wrapped-section {
+
+    padding: 120px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.wrapped-container {
+
+    width: 1000px;
+
+    max-width: 95%;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.wrapped-header {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+
+.wrapped-label {
+
+    display: inline-block;
+
+    background: #ffb6d2;
+
+    color: #8c3f5d;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.wrapped-header h2 {
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    color: #633e50;
+
+    margin-bottom: 20px;
+
+}
+
+
+.wrapped-header h2 span {
+
+    display: block;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-weight: 400;
+
+    margin-top: 8px;
+
+}
+
+
+.wrapped-header p {
+
+    max-width: 650px;
+
+    margin: 8px auto;
+
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   STATISTICS GRID
+========================================= */
+
+.wrapped-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.wrapped-card {
+
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 25px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px
+        rgba(220,100,145,0.10);
+
+    transition: 0.3s;
+
+}
+
+
+.wrapped-card:hover {
+
+    transform:
+        translateY(-7px)
+        rotate(-1deg);
+
+    box-shadow:
+        0 20px 45px
+        rgba(220,100,145,0.16);
+
+}
+
+
+.wrapped-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.wrapped-number {
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin-bottom: 8px;
+
+}
+
+
+.wrapped-card h3 {
+
+    color: #633e50;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.wrapped-card p {
+
+    color: #795a68;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   HIGHLIGHT CARD
+========================================= */
+
+.wrapped-highlight {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #ffe0ec
+        );
+
+    border-color: #f7bfd5;
+
+}
+
+
+.wrapped-highlight .wrapped-number {
+
+    font-size: 42px;
+
+}
+
+
+/* =========================================
+   BIGGEST ACHIEVEMENT
+========================================= */
+
+.big-achievement {
+
+    margin-top: 60px;
+
+    padding: 55px 30px;
+
+    background: white;
+
+    border: 2px solid #ffd5e5;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px
+        rgba(220,100,145,0.12);
+
+}
+
+
+.achievement-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.achievement-label {
+
+    color: #c74d7a;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.big-achievement h3 {
+
+    font-family: 'Pacifico', cursive;
+
+    color: #e85d91;
+
+    font-size: 40px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.big-achievement p {
+
+    max-width: 650px;
+
+    margin: 8px auto;
+
+    color: #795a68;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.big-achievement strong {
+
+    display: block;
+
+    margin-top: 25px;
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 27px;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.wrapped-button-area {
+
+    text-align: center;
+
+    margin-top: 45px;
+
+}
+
+
+.wrapped-button {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 17px 32px;
+
+    border-radius: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f783b1,
+            #e85d91
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px
+        rgba(232,93,145,0.25);
+
+    transition: 0.3s;
+
+}
+
+
+.wrapped-button:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 35px
+        rgba(232,93,145,0.35);
+
+}
+
+
+/* =========================================
+   FINAL STATISTICS
+========================================= */
+
+.final-stats {
+
+    display: none;
+
+    margin-top: 45px;
+
+    padding: 50px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #ffe0ec
+        );
+
+    border: 2px solid #f7bfd5;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px
+        rgba(220,100,145,0.13);
+
+    animation:
+        statsAppear
+        0.7s ease;
+
+}
+
+
+.final-stats-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.final-stats-label {
+
+    color: #c74d7a;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.final-stats h3 {
+
+    color: #633e50;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.graduation-number {
+
+    color: #e85d91;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.graduation-bar {
+
+    max-width: 600px;
+
+    height: 20px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #f7c6db;
+
+}
+
+
+.graduation-fill {
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffb6d2,
+            #e85d91
+        );
+
+    border-radius: 20px;
+
+}
+
+
+.final-stats p {
+
+    margin-top: 20px;
+
+    color: #795a68;
+
+}
+
+
+.final-stats p strong {
+
+    color: #e85d91;
+
+}
+
+
+@keyframes statsAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(0.97);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .wrapped-section {
+
+        padding: 90px 15px;
+
+    }
+
+
+    .wrapped-container {
+
+        max-width: 100%;
+
+    }
+
+
+    .wrapped-header h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .wrapped-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .wrapped-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .wrapped-card {
+
+        padding: 25px 12px;
+
+    }
+
+
+    .wrapped-icon {
+
+        font-size: 36px;
+
+    }
+
+
+    .wrapped-number {
+
+        font-size: 30px;
+
+    }
+
+
+    .wrapped-card h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .wrapped-card p {
+
+        font-size: 13px;
+
+    }
+
+
+    .big-achievement {
+
+        padding: 40px 20px;
+
+    }
+
+
+    .big-achievement h3 {
+
+        font-size: 32px;
+
+    }
+
+
+    .big-achievement p {
+
+        font-size: 15px;
+
+    }
+
+
+    .graduation-number {
+
+        font-size: 50px;
+
+    }
+
+}
